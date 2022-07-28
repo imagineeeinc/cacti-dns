@@ -1,15 +1,16 @@
 FROM debian
 
-USER dns
-
 ENV SHELL=/bin/bash
 
-RUN apt update
-RUN sudo apt install dnsmasq
+RUN apt update -y
+RUN apt install dnsmasq -y
 
 COPY ./dnsmasq.conf /etc/dnsmasq.conf
 
-CMD sudo service dnsmasq restart
+# RUN service dnsmasq restart
 
-EXPOSE 53
-EXPOSE 5353
+# CMD ["/bin/bash", "-c", "while :; do sleep 10; done"]
+
+ENTRYPOINT ["dnsmasq", "-k"]
+
+EXPOSE 53 53/udp
