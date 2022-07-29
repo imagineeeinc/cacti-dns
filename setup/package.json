@@ -1,0 +1,9 @@
+{
+  "name": "setup",
+  "private": "true",
+  "main": "setup.js",
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.2.9"
+  }
+}
