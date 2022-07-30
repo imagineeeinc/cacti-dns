@@ -12,6 +12,6 @@ COPY ./hosts /home/hosts
 RUN node /home/setup/setup.js
 COPY ./dnsmasq.conf /etc/dnsmasq.conf
 
-ENTRYPOINT ["dnsmasq", "-k", "-i=fly-global-services"]
+ENTRYPOINT ["dnsmasq", "-k", "--listen-address=fly-global-services"]
 
 EXPOSE 53 53/udp
