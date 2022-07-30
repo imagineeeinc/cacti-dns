@@ -1,0 +1,3 @@
+tasks:
+- init: >
+    brew install flyctl && docker build ./ -t dns && docker run -p 53:53 dns
