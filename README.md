@@ -1,5 +1,6 @@
 <h1 align="center">Cacti DNS 🌵</h1>
 <h3 align="center">A self hostable DNS that blocks ads like spikes.</h3>
+<h4 align="center">⚠This project has been put on hold because I don't have the knowledge to properly set it up and use it⚠</h4>
 
 DNS (or Domain Name Server) allows you to map domains names to ip address, example `github.com` => `140.82.121.3`.
 
